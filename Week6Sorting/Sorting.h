@@ -184,7 +184,7 @@ void Merge(std::vector<T>& vector, int start, int mid, int end)
 template <class T>
 void MergeSort(std::vector<T>& vector, int start, int end)
 {
-	int mid = (start + end) / 2;
+	int mid = start + (end + start) / 2;
 	if (start < end) {
 		MergeSort(vector, start, mid);
 		MergeSort(vector, mid+1, end);
